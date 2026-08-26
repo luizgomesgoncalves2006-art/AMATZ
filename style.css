@@ -281,7 +281,14 @@ nav a:hover {
 
 .modalidades {
     padding: 80px 40px;
-    background-color: #161616;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255, 90, 0, 0.10),
+            transparent 35%
+        ),
+        #0a0a0a;
 }
 
 .modalidades h2 {
@@ -409,26 +416,51 @@ nav a:hover {
 /* HORÁRIOS */
 
 .horarios {
-    padding: 80px 40px;
-    background-color: #0a0a0a;
+    padding: 90px 40px;
+    background:
+        radial-gradient(circle at top right, rgba(255, 90, 0, 0.10), transparent 35%),
+        #0a0a0a;
 }
 
 .horarios h2 {
     text-align: center;
-    font-size: 36px;
+
+    font-size: 42px;
     color: #ff5a00;
-    margin-bottom: 40px;
+
+    margin-bottom: 15px;
 }
 
+.horarios h2::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    margin: 12px auto 45px;
+
+    background: linear-gradient(
+        90deg,
+        #ff5a00,
+        #ffc400
+    );
+
+    border-radius: 10px;
+}
+
+
+/* FILTROS */
+
 .filtros-horarios {
-    max-width: 900px;
-    margin: 0 auto 40px;
+    max-width: 800px;
+    margin: 0 auto 45px;
 
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-    flex-wrap: wrap;
+    gap: 25px;
 }
 
 .filtros-horarios div {
@@ -439,60 +471,114 @@ nav a:hover {
 }
 
 .filtros-horarios label {
+    font-size: 16px;
     font-weight: bold;
+
     color: #ffc400;
 }
 
 .filtros-horarios select {
-    min-width: 220px;
+    width: 100%;
 
-    padding: 12px 15px;
+    padding: 15px 18px;
 
     background-color: #161616;
     color: #ffffff;
 
     border: 2px solid #ff5a00;
-    border-radius: 6px;
+    border-radius: 10px;
 
     font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
 }
 
+.filtros-horarios select:hover,
+.filtros-horarios select:focus {
+    border-color: #ffc400;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 196, 0, 0.10),
+        0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+
+/* PAINEL DOS HORÁRIOS */
+
 #resultado-horarios {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
 
-    padding: 30px;
+    padding: 40px;
 
-    background-color: #161616;
+    background:
+        linear-gradient(
+            145deg,
+            #181818,
+            #111111
+        );
+
+    border: 1px solid #292929;
 
     border-left: 5px solid #ff5a00;
-    border-right: 5px solid #ff5a00;
+    border-right: 5px solid #ffc400;
 
-    border-radius: 8px;
+    border-radius: 16px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
 }
 
 #resultado-horarios h3 {
     text-align: center;
 
-    font-size: 28px;
+    font-size: 32px;
     color: #ffc400;
 
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
-#resultado-horarios p {
-    padding: 10px 0;
 
-    border-bottom: 1px solid #333;
+/* CADA HORÁRIO */
+
+#resultado-horarios p {
+    padding: 15px 18px;
+
+    margin-bottom: 10px;
+
+    background-color: rgba(255, 255, 255, 0.025);
+
+    border-left: 3px solid transparent;
+    border-bottom: none;
+
+    border-radius: 7px;
 
     font-size: 17px;
+
+    transition: 0.25s;
+}
+
+#resultado-horarios p:hover {
+    background-color: rgba(255, 90, 0, 0.08);
+
+    border-left-color: #ff5a00;
+
+    transform: translateX(5px);
 }
 
 /* PLANOS */
 
 .planos {
     padding: 80px 40px;
-    background-color: #161616;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255, 90, 0, 0.10),
+            transparent 35%
+        ),
+        #0a0a0a;
 }
 
 .planos h2 {
@@ -575,7 +661,14 @@ nav a:hover {
 
 .professores {
     padding: 80px 40px;
-    background-color: #0a0a0a;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255, 90, 0, 0.10),
+            transparent 35%
+        ),
+        #0a0a0a;
 }
 
 .professores > h2 {
@@ -655,50 +748,101 @@ nav a:hover {
 /* CONTATO */
 
 .contato {
-    padding: 80px 40px;
-    background-color: #161616;
+    padding: 90px 40px;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255, 90, 0, 0.10),
+            transparent 35%
+        ),
+        #0a0a0a;
 }
 
 .contato h2 {
     text-align: center;
-    font-size: 36px;
+
+    font-size: 42px;
     color: #ff5a00;
-    margin-bottom: 50px;
+
+    margin-bottom: 15px;
 }
 
+.contato h2::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    margin: 12px auto 45px;
+
+    background: linear-gradient(
+        90deg,
+        #ff5a00,
+        #ffc400
+    );
+
+    border-radius: 10px;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+
 .contato-content {
-    max-width: 1100px;
+    max-width: 1150px;
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.9fr 1.1fr;
 
-    gap: 40px;
-    align-items: start;
+    gap: 35px;
+
+    align-items: stretch;
 }
 
 
-/* INFORMAÇÕES DE CONTATO */
+/* INFORMAÇÕES */
 
 .info-contato {
-    background-color: #0a0a0a;
+    padding: 40px;
 
-    padding: 35px;
+    background:
+        linear-gradient(
+            145deg,
+            #151515,
+            #0d0d0d
+        );
 
+    border: 1px solid #252525;
     border-left: 5px solid #ff5a00;
-    border-radius: 8px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
 }
 
 .info-contato h3 {
-    font-size: 26px;
+    font-size: 30px;
     color: #ffc400;
 
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .info-contato p {
-    margin-bottom: 18px;
-    line-height: 1.6;
+    padding: 15px 0;
+
+    margin: 0;
+
+    border-bottom: 1px solid #292929;
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.info-contato p:last-child {
+    border-bottom: none;
 }
 
 .info-contato strong {
@@ -709,21 +853,34 @@ nav a:hover {
 /* FORMULÁRIO */
 
 .formulario {
+    padding: 40px;
+
     display: flex;
     flex-direction: column;
 
-    gap: 12px;
+    gap: 10px;
 
-    background-color: #0a0a0a;
+    background:
+        linear-gradient(
+            145deg,
+            #151515,
+            #0d0d0d
+        );
 
-    padding: 35px;
-
+    border: 1px solid #252525;
     border-right: 5px solid #ffc400;
-    border-radius: 8px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
 }
 
 .formulario label {
+    margin-top: 8px;
+
+    font-size: 15px;
     font-weight: bold;
+
     color: #ffc400;
 }
 
@@ -731,32 +888,62 @@ nav a:hover {
 .formulario textarea {
     width: 100%;
 
-    padding: 12px;
+    padding: 14px 16px;
 
-    background-color: #161616;
+    background-color: #191919;
     color: #ffffff;
 
-    border: 2px solid #333;
-    border-radius: 5px;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
 
-    font-size: 16px;
+    font-size: 15px;
+
+    transition: 0.3s;
 }
 
 .formulario input:focus,
 .formulario textarea:focus {
     outline: none;
+
     border-color: #ff5a00;
+
+    box-shadow: 0 0 0 3px rgba(255, 90, 0, 0.10);
 }
 
 .formulario textarea {
+    min-height: 130px;
+
     resize: vertical;
 }
 
-.formulario button {
-    border: none;
+
+/* BOTÃO DO FORMULÁRIO */
+
+.formulario .btn {
+    margin-top: 15px;
+
+    padding: 14px 25px;
+
+    border: 2px solid #ff5a00;
+
+    background-color: #ff5a00;
+    color: #ffffff;
+
+    border-radius: 8px;
+
+    font-weight: bold;
     cursor: pointer;
 
-    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.formulario .btn:hover {
+    background-color: #ffc400;
+    border-color: #ffc400;
+
+    color: #0a0a0a;
+
+    transform: translateY(-2px);
 }
 
 /* RODAPÉ */
