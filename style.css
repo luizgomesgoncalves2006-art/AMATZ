@@ -185,6 +185,14 @@ nav a:hover {
 .sobre {
     padding: 80px 40px;
     background-color: #0a0a0a;
+
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(255, 90, 0, 0.10),
+        transparent 35%
+    ),
+    #0a0a0a;
 }
 
 .sobre h2 {
@@ -232,7 +240,12 @@ nav a:hover {
 
     margin: 0;
     padding: 0;
+
+    
 }
+
+
+
 
 /* TEXTO */
 
