@@ -87,7 +87,13 @@ nav a:hover {
     position: relative;
     overflow: hidden;
 
-    background-image: url("imagens/imagem-dos-lutadores.png");
+    background-image:
+    radial-gradient(
+        circle at top right,
+        rgba(255, 90, 0, 0.10),
+        transparent 35%
+    ),
+    url("imagens/imagem-dos-lutadores.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
