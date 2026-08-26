@@ -963,21 +963,26 @@ footer p {
     /* INÍCIO */
 
     .banner {
-        min-height: 480px;
+    min-height: 0;
+    height: auto;
 
-        padding: 25px 15px;
+    padding: 0;
 
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+    background-image: url("imagens/imagem-dos-lutadores.png");
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
 
-        background-color: #000000;
-    }
+    background-color: #000000;
+}
 
     .banner-content {
-        width: 100%;
-        padding: 20px 10px;
-    }
+    width: 100%;
+
+    padding: 140px 12px 35px;
+
+    text-align: center;
+}
 
     .banner-content h2 {
         font-size: 36px;
