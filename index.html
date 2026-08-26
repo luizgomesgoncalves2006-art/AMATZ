@@ -181,6 +181,12 @@
 
     <h2>Planos</h2>
 
+    <div class="periodos-planos">
+    <button type="button" data-periodo="mensal">Mensal</button>
+    <button type="button" data-periodo="trimestral">Trimestral</button>
+    <button type="button" data-periodo="anual">Anual</button>
+</div>
+
     <div class="cards-planos">
 
         <!-- PLANO ONE -->
@@ -189,7 +195,7 @@
 
             <p>Escolha 1 modalidade</p>
 
-            <p class="preco">R$ 249,90/mês</p>
+            <p class="preco" id="preco-one">R$ 249,90/mês</p>
 
             <ul>
                 <li>1 modalidade</li>
@@ -197,7 +203,9 @@
                 <li>Acesso aos horários da sua turma</li>
             </ul>
 
-            <a href="#contato" class="btn">Quero este plano</a>
+            <a href="#contato" class="btn btn-plano" data-plano="AMATZ ONE">
+    Quero este plano
+</a>
         </div>
 
 
@@ -207,7 +215,7 @@
 
             <p>Escolha 2 modalidades</p>
 
-            <p class="preco">R$ 299,90/mês</p>
+            <p class="preco" id="preco-duo">R$ 299,90/mês</p>
 
             <ul>
                 <li>2 modalidades</li>
@@ -215,7 +223,9 @@
                 <li>Acesso aos horários das suas turmas</li>
             </ul>
 
-            <a href="#contato" class="btn">Quero este plano</a>
+           <a href="#contato" class="btn btn-plano" data-plano="AMATZ DUO">
+    Quero este plano
+</a>
         </div>
 
 
@@ -225,7 +235,7 @@
 
             <p>A experiência completa da AMATZ</p>
 
-            <p class="preco">R$ 349,90/mês</p>
+            <p class="preco" id="preco-unlimited">R$ 349,90/mês</p>
 
             <ul>
                 <li>Acesso às 5 modalidades</li>
@@ -234,7 +244,9 @@
                 <li>Acesso sujeito à disponibilidade de vagas</li>
             </ul>
 
-            <a href="#contato" class="btn">Quero este plano</a>
+            <a href="#contato" class="btn btn-plano" data-plano="AMATZ UNLIMITED">
+    Quero este plano
+</a>
         </div>
 
     </div>
@@ -425,7 +437,7 @@
 
         </div>
 
-        <form class="formulario">
+       <form class="formulario" id="formulario-contato">
 
             <label for="nome">Nome:</label>
             <input type="text" id="nome" placeholder="Seu nome" required>
@@ -453,3 +465,10 @@
     </div>
 
 </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

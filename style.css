@@ -12,6 +12,16 @@ body {
     color: #ffffff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+nav a.ativo {
+    color: #ffc400;
+    border-bottom: 2px solid #ff5a00;
+    padding-bottom: 5px;
+}
+
 
 /* CABEÇALHO */
 
