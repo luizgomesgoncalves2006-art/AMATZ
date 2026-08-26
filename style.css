@@ -909,46 +909,41 @@ footer p {
 
     /* CABEÇALHO */
 
-    header {
-        width: 100%;
-        padding: 12px 16px;
+    /* MENU MOBILE EM UMA ÚNICA LINHA */
 
-        flex-direction: column;
-        gap: 15px;
-    }
+header {
+    padding: 10px 12px;
+}
 
-    .logo {
-        width: 100%;
-        justify-content: center;
-    }
+nav {
+    width: 100%;
+    overflow-x: auto;
+}
 
-    .logo img {
-        width: 45px;
-        height: 45px;
-    }
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
-    .logo h1 {
-        font-size: 24px;
-    }
+    justify-content: flex-start;
+    align-items: center;
 
-    nav {
-        width: 100%;
-    }
+    gap: 14px;
 
-    nav ul {
-        width: 100%;
+    width: max-content;
+    margin: 0;
+    padding: 0;
+}
 
-        flex-direction: row;
-        flex-wrap: wrap;
+nav li {
+    flex: 0 0 auto;
+}
 
-        justify-content: center;
+nav a {
+    font-size: 12px;
+    white-space: nowrap;
+}
 
-        gap: 12px 18px;
-    }
-
-    nav a {
-        font-size: 14px;
-    }
 
 
     /* INÍCIO */
