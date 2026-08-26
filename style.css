@@ -87,7 +87,7 @@ nav a:hover {
     position: relative;
     overflow: hidden;
 
-    background-image: url("imagens/imagens/imagem-dos-lutadores.png");
+    background-image: url("imagens/imagem-dos-lutadores.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -384,23 +384,23 @@ nav a:hover {
 }
 
 .card-mma {
-    background-image: url("imagens/imagens/mmacard.png");
+    background-image: url("imagens/mmacard.png");
 }
 
 .card-jiu {
-    background-image: url("imagens/imagens/jiucard.png");
+    background-image: url("imagens/jiucard.png");
 }
 
 .card-muay {
-    background-image: url("imagens/imagens/thaicard.png");
+    background-image: url("imagens/thaicard.png");
 }
 
 .card-boxe {
-    background-image: url("imagens/imagens/boxcard.png");
+    background-image: url("imagens/boxcard.png");
 }
 
 .card-judo {
-    background-image: url("imagens/imagens/judocard.png");
+    background-image: url("imagens/judocard.png");
 }
 
 
