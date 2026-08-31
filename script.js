@@ -317,3 +317,40 @@ linksMenu.forEach(function(link) {
     });
 
 });
+
+
+// ANIMAÇÃO DOS CARDS DE MODALIDADES
+
+var cardsModalidades =
+    document.querySelectorAll(".modalidades .card");
+
+for (var i = 0; i < cardsModalidades.length; i++) {
+    cardsModalidades[i].classList.add("animar-card");
+}
+
+function animarCardsModalidades() {
+
+    var alturaTela = window.innerHeight;
+
+    for (var i = 0; i < cardsModalidades.length; i++) {
+
+        var card = cardsModalidades[i];
+
+        var posicaoCard =
+            card.getBoundingClientRect().top;
+
+        if (posicaoCard < alturaTela - 80) {
+
+            card.classList.add("aparecer");
+
+        }
+
+    }
+}
+
+window.addEventListener(
+    "scroll",
+    animarCardsModalidades
+);
+
+animarCardsModalidades();
