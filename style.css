@@ -61,6 +61,14 @@ header {
     color: #ffc400;
 }
 
+
+.logo h1,
+nav a {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+}
+
+
 /* MENU */
 
 nav ul {
@@ -188,6 +196,14 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
+.banner-content h2,
+.banner-content h3,
+.banner-content p,
+.banner-content .btn {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+}
+
 /* SOBRE */
 
 /* SOBRE */
@@ -207,7 +223,10 @@ nav a:hover {
 
 .sobre h2 {
     text-align: center;
-    font-size: 36px;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
     color: #ff5a00;
     margin-bottom: 50px;
 }
@@ -276,9 +295,11 @@ nav a:hover {
 }
 
 .sobre-texto h3 {
+    font-family: "Rajdhani", sans-serif;
     color: #ffc400;
-    font-size: 32px;
-
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     margin-bottom: 30px;
     position: relative;
 }
@@ -322,11 +343,13 @@ nav a:hover {
 
 .modalidades h2 {
     text-align: center;
-    font-size: 36px;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: 1px;
     color: #ff5a00;
     margin-bottom: 40px;
 }
-
 .cards {
     max-width: 1200px;
     margin: 0 auto;
@@ -382,8 +405,14 @@ nav a:hover {
 }
 
 .card h3 {
+    position: relative;
+    z-index: 1;
+
+    font-family: "Rajdhani", sans-serif;
     color: #ffc400;
-    font-size: 24px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     margin-bottom: 15px;
 }
 
@@ -453,8 +482,8 @@ nav a:hover {
 
 .horarios h2 {
     text-align: center;
-
-    font-size: 42px;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 44px;
     color: #ff5a00;
 
     margin-bottom: 15px;
@@ -500,9 +529,9 @@ nav a:hover {
 }
 
 .filtros-horarios label {
-    font-size: 16px;
+    font-size: 22px;
     font-weight: bold;
-
+    font-family: "Rajdhani", sans-serif;
     color: #ffc400;
 }
 
@@ -561,10 +590,11 @@ nav a:hover {
 
 #resultado-horarios h3 {
     text-align: center;
-
-    font-size: 32px;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     color: #ffc400;
-
     margin-bottom: 30px;
 }
 
@@ -598,6 +628,14 @@ nav a:hover {
 
 /* PLANOS */
 
+.btn-plano {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
 .planos {
     padding: 80px 40px;
 
@@ -612,7 +650,10 @@ nav a:hover {
 
 .planos h2 {
     text-align: center;
-    font-size: 36px;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: 1px;
     color: #ff5a00;
     margin-bottom: 50px;
 }
@@ -641,16 +682,19 @@ nav a:hover {
 }
 
 .plano h3 {
-    font-size: 26px;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     color: #ffc400;
     margin-bottom: 15px;
 }
 
 .plano .preco {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: bold;
     color: #ff5a00;
-
+    font-family: "Rajdhani", sans-serif;
     margin: 25px 0;
 }
 
@@ -684,6 +728,41 @@ nav a:hover {
 
 .plano.destaque:hover {
     transform: scale(1.05) translateY(-8px);
+}
+
+.periodos-planos {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.periodos-planos button {
+    padding: 12px 24px;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    color: #ffffff;
+    background-color: #111111;
+
+    border: 2px solid #ff5a00;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.periodos-planos button:hover,
+.periodos-planos button:focus {
+    color: #0a0a0a;
+    background-color: #ffc400;
+    border-color: #ffc400;
+
+    transform: translateY(-2px);
+    outline: none;
 }
 
 /* PROFESSORES */
@@ -774,6 +853,14 @@ nav a:hover {
     color: #ffc400;
 }
 
+.professores > h2,
+.professores > h3,
+.professor h4,
+.professor p {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+}
+
 /* CONTATO */
 
 .contato {
@@ -814,6 +901,15 @@ nav a:hover {
     );
 
     border-radius: 10px;
+}
+
+.contato h2,
+.info-contato h3,
+.info-contato strong,
+.formulario label,
+.formulario .btn {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
 }
 
 
@@ -1423,5 +1519,34 @@ footer p {
 
     .sobre-texto p {
         font-size: 15px;
+    }
+}
+
+
+/* ANIMAÇÃO DOS CARDS DE MODALIDADES */
+
+.modalidades .card.animar-card {
+    opacity: 0;
+    transform: translateY(60px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.modalidades .card.animar-card.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .periodos-planos {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .periodos-planos button {
+        padding: 10px 16px;
+        font-size: 16px;
     }
 }
